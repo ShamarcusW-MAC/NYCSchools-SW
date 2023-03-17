@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct NYCSchools_SWApp: App {
+    let app = AppController()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootNavView(schoolsViewModel: app.nycSchoolsViewModel)
         }
     }
 }
